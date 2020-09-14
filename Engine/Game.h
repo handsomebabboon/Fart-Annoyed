@@ -23,7 +23,7 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Graphics.h"
-
+#include "RectF.h"
 class Game
 {
 public:
@@ -42,5 +42,6 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
+    RectF rect = RectF(100.0f,150.0f,100.0f,200.0f);
 	/********************************/
 };

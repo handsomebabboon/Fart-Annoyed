@@ -316,7 +316,7 @@ void Graphics::PutPixel( int x,int y,Color c )
 	pSysBuffer[Graphics::ScreenWidth * y + x] = c;
 }
 
-void Graphics::DrawRect( int x0,int y0,int x1,int y1,Color c )
+void Graphics::DrawRect( float x0,float y0,float x1,float y1,Color c )
 {
 	if( x0 > x1 )
 	{
@@ -327,11 +327,11 @@ void Graphics::DrawRect( int x0,int y0,int x1,int y1,Color c )
 		std::swap( y0,y1 );
 	}
 
-	for( int y = y0; y < y1; ++y )
+	for( float y = y0; y < y1; ++y )
 	{
-		for( int x = x0; x < x1; ++x )
+		for( float x = x0; x < x1; ++x )
 		{
-			PutPixel( x,y,c );
+			PutPixel( (int)x,(int)y,c );
 		}
 	}
 }

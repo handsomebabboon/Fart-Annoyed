@@ -42,4 +42,5 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
+    gfx.DrawRect(rect,Colors::Blue);
 }
