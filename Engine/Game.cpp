@@ -42,4 +42,6 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
+    Brick br1(Colors::Cyan, RectF(100.0f, 100.0f, 300.0f, 150.0f));
+    br1.Draw(gfx);
 }
