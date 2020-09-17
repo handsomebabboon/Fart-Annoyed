@@ -10,7 +10,12 @@ public:
 	RectF( const Vec2& topLeft,const Vec2& bottomRight );
 	RectF( const Vec2& topLeft,float width,float height );
 	bool IsOverlappingWith( const RectF& other ) const;
-public:
+
+	float GetRight();
+	float GetLeft();
+	float GetTop();
+	float GetBottom();
+private:
 	float left;
 	float top;
 	float right;

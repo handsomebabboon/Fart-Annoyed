@@ -11,3 +11,4 @@ private:
 	RectF rect;
 };
 
+

@@ -1,8 +1,7 @@
 #include "Brick.h"
-
 void Brick::Draw(Graphics& gfx)
 {
-	gfx.DrawRect((int)rect.left, (int)rect.top, (int)rect.right, (int)rect.bottom, c);
+	gfx.DrawRect((int)rect.GetLeft(), (int)rect.GetTop(), (int)rect.GetRight(), (int)rect.GetBottom(), c);
 }
 
 Brick::Brick(Color in_c, RectF& in_rect)
