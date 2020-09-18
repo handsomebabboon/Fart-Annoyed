@@ -25,7 +25,7 @@ Game::Game(MainWindow& wnd)
     :
     wnd(wnd),
     gfx(wnd),
-    b(Vec2(100.0f, 100.0f), Vec2(100.0f,100.0f))
+    b(Vec2(100.0f, 100.0f), Vec2(200.0f,200.0f))
 {
 }
 
