@@ -8,13 +8,18 @@ Ball::Ball(Vec2& in_pos, Vec2& in_vel)
 {
 }
 
-void Ball::Draw(Graphics& gfx,Vec2& cen)
+void Ball::Draw(Graphics& gfx)
 {
-	SpriteCodex::DrawBall(cen,gfx);
+	SpriteCodex::DrawBall(pos,gfx);
 }
 
 Vec2 Ball::GetPos()
 {
 	return pos;
+}
+
+void Ball::Update(float dt)
+{
+	pos += vel * dt;
 }
 
