@@ -25,22 +25,22 @@ void Ball::Update(float dt)
 	Vec2 bottomrightcorner = pos + Vec2(7.0f, 7.0f);
 	Vec2 topleftcorner = pos - Vec2(7.0f, 7.0f);
 
-	if (bottomrightcorner.x >= Graphics::ScreenWidth-1) {
-		bottomrightcorner.x = Graphics::ScreenWidth-1;
+	if (bottomrightcorner.x >= Graphics::ScreenWidth-2) {
+		bottomrightcorner.x = Graphics::ScreenWidth-2;
 		vel.x = -vel.x;
 	}
-	else if (topleftcorner.x <= 1) {
-		topleftcorner.x = 1;
+	if (topleftcorner.x <= 2) {
+		topleftcorner.x = 2;
 		vel.x = -vel.x;
 	}
 
-	if (bottomrightcorner.y >= Graphics::ScreenHeight-1) {
-		bottomrightcorner.y = Graphics::ScreenHeight-1;
+	if (bottomrightcorner.y >= Graphics::ScreenHeight-2) {
+		bottomrightcorner.y = Graphics::ScreenHeight-2;
 		vel.y = -vel.y;
 	}
 	
-	else if (topleftcorner.y <= 1) {
-		topleftcorner.y = 1;
+	if (topleftcorner.y <= 2) {
+		topleftcorner.y = 2;
 		vel.y = -vel.y;
 	}
 	
